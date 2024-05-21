@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Kalkulátor</h2>
+            <form method="post" class="form row">
+        <div class="col-6">
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" placeholder="Testsúly" name="sex" aria-label="sex" aria-describedby="basic-addon1" id="sex-1" min="0" max="299" value="1" checked="">
+                <label class="form-check-label" for="sex-1">Férfi</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" placeholder="Testsúly" name="sex" aria-label="sex" aria-describedby="basic-addon1" id="sex-2" value="2">
+                <label class="form-check-label" for="sex-2">Nő</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" name="category" aria-label="category" aria-describedby="basic-addon1" id="category-1" value="1" checked="">
+                <label class="form-check-label" for="category-1">Amatőr</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" placeholder="Testsúly" name="category" aria-label="category" aria-describedby="basic-addon1" id="category-2" value="2">
+                <label class="form-check-label" for="category-2">Versenyző</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" placeholder="Testsúly" name="category" aria-label="category" aria-describedby="basic-addon1" id="category-3" value="3">
+                <label class="form-check-label" for="category-3">Versenyző II.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input required" placeholder="Testsúly" name="category" aria-label="category" aria-describedby="basic-addon1" id="category-4" value="4">
+                <label class="form-check-label" for="category-4">Profi</label>
+            </div>
+        </div>
+        <div class="form-group col-6 col-sm-3">
+            <input type="number" class="form-control required" placeholder="Testsúly" name="bodyweight" aria-label="bodyweight" aria-describedby="basic-addon1" value="60">
+            <label>Testsúly</label>
+        </div>
+        <div class="form-group col-6 col-sm-3">
+            <input type="number" class="form-control required" placeholder="Életkor" name="age" aria-label="bodyweight" aria-describedby="basic-addon1" value="30">
+            <label>Életkor</label>
+        </div>
+            </form>
+            <p>Figyelem! A kalkulátor az összes lehetséges gyakorlat súlyait mutatja, nem csak a kiválasztott kategória
+         Komplett versenyszámait!</p>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Kategória<span class="badge badge-success">Open -75kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Guggolás<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 1.3 x 0.8">62.5 kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Fekvenyomás<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 1 x 0.8">47.5 kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Felhúzás<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 1.5 x 0.8">72.5 kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Mellről nyomás<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 0.6 x 0.8">30 kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Húzódzkodás<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 1 x 0">0 kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Bicepsz<span class="badge badge-dark" title="testsúly x korcsoport x gyakorlat x kategória: 60 x 1 x 0.375 x 0.8">18 kg</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

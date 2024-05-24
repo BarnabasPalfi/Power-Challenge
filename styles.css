@@ -1,7 +1,19 @@
-.cím{
+.cím {
     background-color: red;
 }
 
-.gyakorlat img{
+.gyakorlat img {
     width: 500px;
+}
+
+.görgő {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.felirat {
+    color: black;
+    font-weight: bold;
+    background-color: wheat;
+    width: 200px;
 }

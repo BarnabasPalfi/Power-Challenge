@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="js/bootstrap.min.js"></script>
     <title>Power-Challenge</title>
 </head>
 <body>
-<div class="container">
-        <div class="cím text-center">
+    <div class="container">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner görgő mt-3">
+                <div class="carousel-item active">
+                    <img src="képek/01görgő.jpg" alt="01" class="d-block" style="width:100%">
+                    <div class="carousel-caption felirat rounded">
+                        <h3>
+                            Remek helyszín
+                        </h3>    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="képek/02görgő.jpg" alt="02" class="d-block" style="width:100%">
+                    <div class="carousel-caption felirat rounded">
+                        <h3>
+                            Nincs korhatár
+                        </h3>    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="képek/03görgő.jpg" alt="03" class="d-block" style="width:100%">
+                    <div class="carousel-caption felirat rounded">
+                        <h3>
+                            Komoly kihívás
+                        </h3>    
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="cím text-center mb-5 görgő">
             <img src="képek/logo.png" alt="Logó" title="Logó">
         </div>
-
-
-        <div class="container-fluid" id="kepek">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-              
-              <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-              </ul>      
-              
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="képek/logo.png" alt="logo" title="logo">
-                </div>
-                <div class="carousel-item">
-                  <img src="képek/02görgő.jpg" alt="02" title="02">
-                </div>
-                <div class="carousel-item">
-                  <img src="képek/03görgő.jpg" alt="03" title="03">
-                </div>
-              </div>      
-              
-              <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
-            </div>
-          </div>
-          
-          
         <div class="gyakorlat mb-2">
             <div class="row">
-                <dic class="col-12">
+                <dic class="col-12 my-3">
                     <h2>Gyakorlatok</h2>
                 </dic>
-                <div class="col-12">
+                <div class="col-12 my-3">
                     <h4>Általános szabályok</h4>
                 </div>
                 <div class="col-12">
@@ -69,21 +76,21 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h4>
+                    <h4 class="my-3">
                         Guggolás
                     </h4>
                     <p>
                         <strong>Kötelező versenyruházat:</strong><br>póló, rövid nadrág.<br><strong>Használható felszerelés:</strong><br>térdgumi, öv, csuklóbandázs. PROFI kategóriahasználhat még térdbandázst.<br><strong>Gyakorlat végrehajtása:</strong><br>nyújtott térddel kell indítani minden gyakorlatot és addig kell leguggolni, hogy atérd és a csípő forgási pontja vizszíntes legyen. Onnan lehet felállni. Minden egyes guggolást bírói vezényszóra szabad újra megkezdeni (érvényes ismétlésekszáma), melyet a bíró akkor ad meg, ha a kiindulási pozíció rendben (azaz nyújtott a térd). A guggolások között legfeljebb 5 mp pihenő tartható. Ha ennéltöbbet vár valaki, a vezényszót követően, akkor vége a sorozatának.
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 my-4">
                     <video width="350" controls="" preload="none">
                         <source src="képek/Guggolás.mp4" type="video/mp4">
                     </video>
                     <img src="képek/Guggolás.png" alt="Guggolás" title="Guggolás">
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 my-4">
                         <h4>
                             Fekvenyomás
                         </h4>
@@ -92,13 +99,13 @@
                         </video>
                         <img src="képek/Fekvenyomás.png" alt="Fekvenyomás" title="Fekvenyomás">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 my-4">
                         <p>
                             <strong>Kötelező versenyruházat:</strong><br>póló, rövid nadrág.<br><strong>Használható felszerelés:</strong><br>öv, csuklóbandázs.<br><strong>Gyakorlatvégrehajtása:</strong><br>nyújtott könyökkel kell elindítani a gyakorlatot és azzal is kell minden egyes nyomást befejezni. A mellet érintenie kell a rúdnak.Fogásszélesség legfeljebb 81 cm (ezen belül kell fogni a rúdat). A rúdat át kell fogni a hüvelyk ujjal. A rúd mellen történő pattintása tilos, érvénytelen. Afenéknek a paddal a gyakorlat közben folyamatosan érintkeznie kell. A talp valamely részének a talajjal folyamatosan érintkeznie kell.  
                         </p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <h4>
                                 Felhúzás
                             </h4>
@@ -106,7 +113,7 @@
                                 <strong>Kötelező versenyruházat:</strong><br>póló, testhez simuló nadrág, és térdzokni (hosszú nadrág esetén nem szükséges), cipő (balettcipő is elfogadható).<br><strong>Használható felszerelés:</strong><br>térdgumi, öv, csuklóbandázs, gurtni.<br><strong>Gyakorlat végrehajtása:</strong><br>Szumó felhúzás nem megengedett! a földről kell felhúzni a súlyt, úgy hogy a végén nyújtott legyen a térd és a kar. Ekkor a bírói vezényszóra (érvényes ismétlések száma) meg lehet kezdeni a leengedést. A súlynak érintenie kell a talajt és meg kell állítani, utána lehet kezdeni az új gyakorlatot. A súlyt a földről pattintani tilos, érvénytelen. A súlyt a combon segítő szándékkal megtámasztani érvénytelen. Az ismétlések között legfeljebb 3 mp pihenő tartható, mely közben a rúdat elengedni tilos. Ha ennél többet vár valaki, akkor vége a sorozatának.
                             </p>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <video width="350" controls="" preload="none">
                                 <source src="képek/Felhúzás.mp4" type="video/mp4">
                             </video>
@@ -114,7 +121,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <h4>
                                 Mellről nyomás
                             </h4>
@@ -123,14 +130,14 @@
                             </video>
                             <img src="képek/Mellről nyomás.png" alt="Mellről nyomás" title="Mellről nyomás">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <p>
                                 <strong>Kötelező versenyruházat:</strong><br>póló, rövid nadrág.<br><strong>Használható felszerelés:</strong><br>könyökgumi, öv, csuklóbandázs.<br><strong>Gyakorlat végrehajtása:</strong><br>a földről kell felvenni a súlyt. Kiindulási pozíció, hogy a mell és az áll között kell legyen a rúd. Láblökéses nyomás megengedett, de a talp lent kell maradjon a földön. A gyakorlat nyújtott könyökkel való kinyomás esetén érvényes. Bírói vezényszót (érvényes ismétlések száma) követően lehet visszaengedni az áll alá. Leesik a súly (akár előre, akár hátra) akkor vége a sorozatnak (amikor leesik az nem számít teljesített gyakorlatnak).
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <h4>
                                 Húzódzkodás
                             </h4>
@@ -138,7 +145,7 @@
                                 </strong><br>póló, rövid nadrág.<br><strong>Használható felszerelés:</strong><br>öv, csuklóbandázs.<br><strong>Gyakorlat végrehajtása:</strong><br>a gyakorlat nyújtott karral indul bicepsz fogással és addig kell felhúzni magad, hogy átláss a rúd felett (tehát a szem magassága el kell érje a rúdat). Aztán újra ki kell nyújtani kart. Láb nem érintheti sem a talajt, sem a húzódzkodó állványt, különben vége a sorozatnak. Bicepsz húzódzkodás a feladat, a rúd fogása választható (tenyér befelé vagy kifelé néz). Lendületvétel tilos. Széles fogás nem megengedett. A húzódzkodó állvány elengedése esetén vége a sorozatnak.
                             </p>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <video width="350" controls="" preload="none">
                                 <source src="képek/Húzódzkodás.mp4" type="video/mp4">
                             </video>
@@ -146,7 +153,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <h4>
                                Bicepsz
                             </h4>
@@ -155,7 +162,7 @@
                             </video>
                             <img src="képek/Bicepsz.png" alt="Bicepsz" title="Karhajlítás francia rúddal">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 my-4">
                             <p>
                                 <strong>Kötelező versenyruházat:</strong><br>póló, rövid nadrág.<br><strong>Használható felszerelés:</strong><br>könyökgumi, öv, csuklóbandázs.<br><strong>Gyakorlat végrehajtása:</strong><br>a földről kell felvenni a súlyt. Kiindulási pozíció, hogy a mell és az áll között kell legyen a rúd. Láblökéses nyomás megengedett, de a talp lent kell maradjon a földön. A gyakorlat nyújtott könyökkel való kinyomás esetén érvényes. Bírói vezényszót (érvényes ismétlések száma) követően lehet visszaengedni az áll alá. Leesik a súly (akár előre, akár hátra) akkor vége a sorozatnak (amikor leesik az nem számít teljesített gyakorlatnak).
                             </p>

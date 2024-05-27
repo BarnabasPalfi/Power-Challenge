@@ -23,3 +23,7 @@
     width: 350px;
     margin-bottom: 15px;
 }
+
+.beosztás {
+    border: 5px red solid;
+}

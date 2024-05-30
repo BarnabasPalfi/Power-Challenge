@@ -28,3 +28,8 @@
 .beosztás {
     border: 5px red solid;
 }
+
+.tapasztalat img{
+    width: 400px;
+    margin-bottom: 15px;
+}
